@@ -2,9 +2,10 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import fs from 'fs';
+import 'dotenv/config';
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT;
 
 app.use(cors());
 app.use(bodyParser.json());
