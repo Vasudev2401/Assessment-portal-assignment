@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const API_URL = import.meta.env.VITE_API_URL;
-// const API_URL = "http://localhost:3001/api";
+
 // Types
 export interface Option {
   id: number;
@@ -42,9 +42,13 @@ const initialState: DomainsState = {
 
 // Async thunks
 export const fetchDomains = createAsyncThunk('domains/fetchDomains', async () => {
-  const response = await axios.get(`${API_URL}/domains`);
+  const response = await axios.get(`${API_URL}/domains/`);
+  console.log('response: ', response);
   return response.data;
 });
+
+
+
 
 export const addDomain = createAsyncThunk('domains/addDomain', async (name: string) => {
   const response = await axios.post(`${API_URL}/domains`, { name });
