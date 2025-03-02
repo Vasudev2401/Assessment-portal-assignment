@@ -1,0 +1,101 @@
+{
+  "domains": [
+    {
+      "id": 1,
+      "name": "Technology",
+      "categories": [
+        {
+          "id": 1,
+          "name": "Frontend",
+          "questions": [
+            {
+              "id": 1,
+              "text": "Which of the following is NOT a JavaScript framework?",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "React",
+                  "isCorrect": false
+                },
+                {
+                  "id": 2,
+                  "text": "Angular",
+                  "isCorrect": false
+                },
+                {
+                  "id": 3,
+                  "text": "Vue",
+                  "isCorrect": false
+                },
+                {
+                  "id": 4,
+                  "text": "Django",
+                  "isCorrect": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Backend",
+          "questions": [
+            {
+              "id": 2,
+              "text": "Which of the following is a Node.js framework?",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "Express",
+                  "isCorrect": true
+                },
+                {
+                  "id": 2,
+                  "text": "Laravel",
+                  "isCorrect": false
+                },
+                {
+                  "id": 3,
+                  "text": "Django",
+                  "isCorrect": false
+                },
+                {
+                  "id": 4,
+                  "text": "Flask",
+                  "isCorrect": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Science",
+      "categories": [
+        {
+          "id": 3,
+          "name": "Physics",
+          "questions": []
+        },
+        {
+          "id": 4,
+          "name": "Chemistry",
+          "questions": []
+        }
+      ]
+    },
+    {
+      "id": 1740917240876,
+      "name": "Arts",
+      "categories": [
+        {
+          "id": 1740917253682,
+          "name": "Literature",
+          "questions": []
+        }
+      ]
+    }
+  ]
+}
